@@ -1,0 +1,14 @@
+Make sure SteamVR is already running (you just need the headset to be active, it doesn't matter if the controllers are attached)
+then run:
+
+cd catkin_dev
+source /opt/ros/noetic/setup.bash
+source devel/setup.bash
+export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:/home/conrad/catkin_dev/devel/lib
+roslaunch ohr_refresh main.launch
+
+rosrun image_view image_view image:=/camera/rgb/image_raw
+
+will have to change catkin_dev and your path to whatever it actually is on your computer.
+
+
