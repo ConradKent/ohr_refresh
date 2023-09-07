@@ -50,10 +50,10 @@ Now paste the following two lines at the end of your .bashrc file (replace with 
 Make sure SteamVR is already running (you just need the headset to be active, it doesn't matter if the controllers are attached)
 then run:
 
-cd catkin_dev
-source /opt/ros/noetic/setup.bash
-source devel/setup.bash
-export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:/home/conrad/catkin_dev/devel/lib
-roslaunch ohr_refresh main.launch
+	$cd catkin_dev
+	$source /opt/ros/noetic/setup.bash
+	$source devel/setup.bash
+	$export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:/home/conrad/catkin_dev/devel/lib
+	$roslaunch ohr_refresh main.launch
 
 (change paths to your computer's)
